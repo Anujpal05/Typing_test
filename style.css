@@ -1,0 +1,133 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(108, 108, 255);    
+}
+
+#timer{
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(255, 144, 104);
+    position:absolute;
+    right: 10px;
+    top:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 50px;
+    width:50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    margin-left: 70px;
+    color:rgb(0, 0, 0);
+    background-color: antiquewhite;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(255, 252, 252, 0.5);
+    transform: translate(-400%,-400%);
+    animation: slide-in 6s ease-in 2s infinite ;
+    
+}
+#box1{
+    animation: slide-in 7s ease-in 2s infinite ;
+}
+
+
+#box2{
+    animation: slide-in 7s ease-in 2s infinite ;
+}
+
+#box3{
+    animation: slide-in 7s ease-in 3.5s infinite ;
+}
+
+#box4{
+    animation: slide-in 7s ease-in 4s infinite ;
+}
+
+#box5{
+    animation: slide-in 7s ease-in 2.7s infinite ;
+}
+
+#box6{
+    animation: slide-in 7s ease-in 4.55 infinite ;
+}
+
+#box7{
+    animation: slide-in 7s ease-in 2.8s infinite ;
+}
+
+#box8{
+    animation: slide-in 7s ease-in 5 infinite ;
+}
+
+#box9{
+    animation: slide-in 7s ease-in 6s infinite ;
+}
+
+#box10{
+    animation: slide-in 7s ease-in 5s infinite ;
+}
+
+
+
+
+@keyframes slide-in {
+    0% {
+      transform: translateY(-100%);
+      background-color:red;
+    }
+   
+    25%{
+        background-color:blue;
+    }
+    50%{
+        transform: translateX(-200%,10vh);
+        background-color: green;
+    }
+    75%{
+        background-color: yellow;
+    }
+    100% {
+      transform: translateY(110vh);
+      background-color: red;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+        .box{
+            margin:3px;
+            height:20px;
+            width:20px;
+            font-size: 0.8rem;
+            border:1.8px solid black;
+
+        }
+  }
+
+ @media screen and (max-width:1300px){
+    .box{
+        margin: 10px;
+        padding: 4px;
+        height: 35px;
+        width: 35px;
+        font-size: 1.2rem;
+        border: 3px solid black;
+    }
+ }
+
